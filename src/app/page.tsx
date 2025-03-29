@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { staticFilePathResolver } from "./helper/staticFilePathResolver";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next-app/next.svg"
+          src={`${staticFilePathResolver("localhost")}/next.svg`}
           alt="Next.js logo"
           width={180}
           height={38}

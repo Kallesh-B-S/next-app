@@ -39,6 +39,11 @@ function Page() {
             >
                 Go Back
             </Link>
+            <div className='border border-solid border-b-white p-5 rounded-2xl flex flex-col gap-3'>
+                <input type="text" className="dinput px-3 py-1 border border-solid border-gray-400" placeholder="Enter email" />
+                <input type="password" required className="dinopwd px-3 py-1 border border-solid border-gray-400" placeholder="Enter password"  />
+                <button className="dbtn dbtn-outline dbtn-accent">Accent</button>
+            </div>
         </div>
     )
 }
